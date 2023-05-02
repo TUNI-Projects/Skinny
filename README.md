@@ -1,13 +1,22 @@
-# Skinny Hash!
+# Skinny Hash
 
 ## How to run test cases
 
 Depending on your C compiler, you will have different commands to compile these
 source code. In the case of GCC, run the following commands:
 
+### To Run and Check Skinny AES Algorithm
+
 ```bash
 gcc skinny.c driver_skinny.c -o skinny.o # compiling
 ./skinny.o # running
+```
+
+### To Run and Check Skinny Hash Algorithm
+
+```bash
+gcc skinny.c tk3.c driver_tk3.c -o hash.o
+./hash.o
 ```
 
 ## How to port SKINNY encryption to TK3 hash function
