@@ -11,6 +11,10 @@ typedef struct {
 /* TODO */
 } context;
 
+/* Implement the F function using skinny */
+void f_384();
+
+
 /**
  * Implement the following API.
  * You can add your own functions above, but don't modify below this line.
