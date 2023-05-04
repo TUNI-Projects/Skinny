@@ -16,7 +16,7 @@ void init(context *ctx)
 /* TODO */
 void update(const unsigned char *a, int len, context *ctx)
 {
-    
+
 }
 
 /* TODO */

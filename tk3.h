@@ -9,11 +9,14 @@
  */
 typedef struct
 {
-    /* TODO */
     unsigned char rIV384[16];
     unsigned char cIV384[32];
     unsigned char S384[48];
 } context;
+
+/* Implement the F function using skinny */
+void f_384();
+
 
 /**
  * Implement the following API.
