@@ -7,8 +7,12 @@
  * - leprechaun gold
  * - ...
  */
-typedef struct {
-/* TODO */
+typedef struct
+{
+    /* TODO */
+    unsigned char rIV384[16];
+    unsigned char cIV384[32];
+    unsigned char S384[48];
 } context;
 
 /**
