@@ -3,7 +3,15 @@
 #include "tk3.h"
 #include "skinny.h"
 
-/* TODO */
+
+void f_384()
+{
+    //call for skinny encryption three times and OR them together?
+
+}
+
+
+    /* TODO */
 void init(context *ctx)
 {
     memset(ctx->rIV384, 0, 16);
@@ -16,6 +24,14 @@ void init(context *ctx)
 /* TODO */
 void update(const unsigned char *a, int len, context *ctx)
 {
+
+    // pad a ?
+    /*
+    int i;
+    for (i = 0; i < len; i++) {
+        s = f_384( s ^ (a | 0))
+    }
+    */
 
 }
 
