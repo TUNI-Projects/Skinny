@@ -11,7 +11,6 @@
 void f384(unsigned char *input, unsigned char *out, context *ctx);
 void pad_message(unsigned char *m, int length, unsigned char *padded_m);
 
-/* TODO */
 void init(context *ctx)
 {
     memset(ctx->rIV384, 0, rate);
@@ -28,7 +27,6 @@ void init(context *ctx)
     ctx->tk3[0] = 0x01; // 7th bit is 1, so 1st byte, 0th index probab!
 }
 
-/* TODO */
 void update(const unsigned char *original_message, int len, context *ctx)
 {
     int i, j;
@@ -56,7 +54,6 @@ void update(const unsigned char *original_message, int len, context *ctx)
     }
 }
 
-/* TODO */
 void finalize(unsigned char *a, context *ctx)
 {
     unsigned char h0, h1;
