@@ -18,8 +18,7 @@ typedef struct
 } context;
 
 /* Implement the F function using skinny */
-void f_384();
-
+void f384(unsigned char *input, unsigned char *out, context *ctx);
 
 /**
  * Implement the following API.

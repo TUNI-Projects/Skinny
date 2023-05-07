@@ -27,7 +27,7 @@ void init(context *ctx)
     ctx->tk3[0] = 0x01; // 7th bit is 1, so 1st byte, 0th index probab!
 }
 
-void update(const unsigned char *original_message, int len, context *ctx)
+void update(const unsigned char *a, int len, context *ctx)
 {
     int i, j;
     unsigned char padded_message[block]; // <- this is the padded new message.
@@ -36,7 +36,7 @@ void update(const unsigned char *original_message, int len, context *ctx)
     {
         // memcpy(temp, a + i, block); <- i am not sure about keeping a copy!
         // so padding will happen no matter what.
-        pad_message(original_message, i + block < len ? block : len - i, padded_message);
+        pad_message(a, i + block < len ? block : len - i, padded_message);
         // TODO: Update the state using the permutation function
         ctx->S384[128] = 0x01; // line 2.
 

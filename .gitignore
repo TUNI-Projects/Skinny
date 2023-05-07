@@ -1,2 +1,5 @@
 *.o
 *.out
+*_assignment4
+*.tar.gz
+.vscode/
