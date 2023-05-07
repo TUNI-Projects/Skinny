@@ -32,3 +32,8 @@ gcc skinny.c tk3.c driver_tk3.c -o hash.o
     - 16-byte plaintext at p
 
     - The 16-byte output at c
+
+## Contributor
+
+* Mohammad Asif Ibtehaz (50366228)
+* Henriikka Kaarenpää (292055)
