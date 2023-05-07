@@ -12,6 +12,9 @@ typedef struct
     unsigned char rIV384[16];
     unsigned char cIV384[32];
     unsigned char S384[48];
+    unsigned char tk1[16];
+    unsigned char tk2[16];
+    unsigned char tk3[16];
 } context;
 
 /* Implement the F function using skinny */
