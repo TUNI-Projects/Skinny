@@ -299,16 +299,16 @@ int main(int argc, char *argv[]) {
     	printf("%d %s\n", i, !memcmp(h, check + i * 32, 32) ? "PASS" : "FAIL");
 	}
     // return 0;
-	// for(i = 0; i < sizeof(m); i++) {
-	//     /* initialize the hash context to reset it to the initial state */
-    // 	init(&ctx);
-    //     /* incremental message update */
-    //     for (j = 0; j < i; j++)
-    //     	update(m + j, 1, &ctx);
-    //     /* then finalize */
-    // 	finalize(h, &ctx);
-    // 	printf("%d %s\n", i, !memcmp(h, check + i * 32, 32) ? "PASS" : "FAIL");
-	// }
+	for(i = 0; i < sizeof(m); i++) {
+	    /* initialize the hash context to reset it to the initial state */
+    	init(&ctx);
+        /* incremental message update */
+        for (j = 0; j < i; j++)
+        	update(m + j, 1, &ctx);
+        /* then finalize */
+    	finalize(h, &ctx);
+    	printf("%d %s\n", i, !memcmp(h, check + i * 32, 32) ? "PASS" : "FAIL");
+	}
 
     return 0;
 }
